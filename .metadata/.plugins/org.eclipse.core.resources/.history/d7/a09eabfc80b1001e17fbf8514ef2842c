@@ -1,0 +1,18 @@
+package com.example.demo.storage;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.example.demo.bean.TestBean;
+
+public class CommonStorage {
+	Map<String,Object> map = new HashMap<>();
+	
+	public String save(TestBean t) {
+		map.put("id", t.getId());
+		map.put("name",t.getName());
+		System.out.println(map);
+		return "pass";
+	}
+
+}

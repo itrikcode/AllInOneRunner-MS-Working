@@ -1,0 +1,6 @@
+package com.example.demo.bean;
+
+public class TestBean {
+	private int id;
+	private String name;
+}

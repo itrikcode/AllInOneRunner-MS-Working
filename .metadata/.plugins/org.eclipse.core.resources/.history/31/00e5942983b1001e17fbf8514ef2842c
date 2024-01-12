@@ -1,0 +1,36 @@
+package com.example.demo.storage;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.bean.TestBean;
+
+@Repository
+public class CommonStorage {
+	Map<String,Object> map = new HashMap<>();
+	
+	public String save(TestBean t) {
+		map.put("id", t.getId());
+		map.put("name",t.getName());
+		System.out.println(map);
+		return "pass";
+	}
+	
+	 public Map<String,Object> iterateMapData() {
+	        // Iterate over the entries in the map
+	        Set<Map.Entry<String, Object>> entrySet = map.entrySet();
+
+	        for (Map.Entry<String, Object> entry : entrySet) {
+	            String key = entry.getKey();
+	            Object value = entry.getValue();
+
+	            // Do something with the key and value, e.g., print them
+	            System.out.println("Key: " + key + ", Value: " + value);
+	        }
+	        return map;
+	    }
+
+}

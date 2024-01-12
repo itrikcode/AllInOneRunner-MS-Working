@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+D:\personal\my-apps\AllInOneRunner\.metadata\.plugins\org.eclipse.jdt.core
+758615375.index
+1236417413.index
+2378884995.index
+1865797976.index
+1251522177.index

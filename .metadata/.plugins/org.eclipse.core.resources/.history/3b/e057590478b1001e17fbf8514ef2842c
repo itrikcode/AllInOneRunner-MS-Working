@@ -1,0 +1,12 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class QueryController {
+
+	@GetMapping("/guery")
+	public String getMethodName() {
+		return "QUERY CONTROLLER";
+	}
+	
+}
